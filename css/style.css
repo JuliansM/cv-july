@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
 .nav{
 	background-color: #3F3C3B;
 	color: white;
@@ -8,6 +14,7 @@
 
 .nav h1 a{
 	color: white !important;
+	font-weight: bold;
 }
 
 .nav h1 a:hover{
@@ -67,33 +74,72 @@
     width: 200px;
 }
 
-.photo{
-	background-color: white;
-	padding-top: 2em;
-	padding-left: 2em;
-	padding-right: 2em;
-}
-
 .text{
 	color: white;
 	text-align: center;
 }
 
-.about{
+.about, .portfolio{
 	background-image: url("../images/about.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100%;	
+}
+
+.about, .services, .portfolio, .contact{
 	padding-top: 6em;
 	padding-left: 2em;
 	padding-right: 2em;
+	text-align : justify;
 }
 
-.about h2{
+.about h2, .services h2, .portfolio h2, .contact h2{
 	margin-bottom: 2em;
+	font-weight: bold;
 }
 
-.about hr{
+.about hr, .services hr{
 	border-top: 2px solid orange;
 	margin-bottom: 2em;
 	width: 50px;
+}
+
+.services, .contact{
+	background-color: #333232;
+	color: white;
+}
+
+.fatherService1, .fatherService2, .fatherService3{
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.sonService1, .sonService2, .sonService3{
+    background-repeat: repeat;
+    background-position: center;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: white;
+    background-size: 75% auto;
+    height: 200px;
+    width: 200px;
+}
+
+.sonService1{
+	background-image: url("../images/responsive.jpg");
+}
+
+.sonService2{
+	background-image: url("../images/tecnologyagil.jpg");
+}
+
+.sonService3{
+	background-image: url("../images/seo.png");
+}
+
+.footer{
+	background-color: black;
+	color: white;
+	padding-top: 1em;
 }
