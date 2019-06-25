@@ -13,33 +13,33 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-4 nav">
-				<h1><a href="#">JULIÁN M.</a></h1>
-			</div>
-
-			<div class="col-md-8 nav-item">
-				<ul>
-					<li>
-						<a href="#">Inicio</a>
-					</li>
-					<li>
-						<a href="#">Acerca de Mí</a>
-					</li>
-					<li>
-						<a href="#">Servicios</a>
-					</li>
-					<li>
-						<a href="#">Portafolio</a>
-					</li>
-					<li>
-						<a href="#">Contacto</a>
-					</li>
-				</ul>
-			</div>
-		</div>
 		<div class="row" id="header">
 			<div class="col-md-12 header">
+			<nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+				  <a class="navbar-brand" href="#">JULIÁN M.</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNav">
+				    <ul class="navbar-nav">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#about">Acerca de Mí</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#services">Servicios</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#portfolio">Portafolio</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#contact">Contacto</a>
+				      </li>
+				    </ul>
+				  </div>
+				</nav>
 				<div class="father">
 					<div class="son"></div>
 				</div>
@@ -181,7 +181,7 @@
 				</div>	
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" id="portfolio">
 			<div class="col-md-12 portfolio">
 				<center><h2>PORTAFOLIO</h2></center>
 
@@ -229,9 +229,33 @@
 				</div>	
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" id="contact">
 			<div class="col-md-12 contact">
 				<center><h2>CONTACTO</h2></center>
+
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6 form-contact">
+						<form>
+							<label>Nombre</label>
+							<input class="form-control" type="text" id="name" name="name" placeholder="Escribe tu nombre">
+							<label>¿Qué servicio te interesa?</label>
+							<select id="service" class="form-control">
+								<option>Seleciona un servicio</option>
+								<option>SITIOS WEB</option>
+								<option>TECNOLOGÍAS ÁGILES</option>
+								<option>SEO</option>
+							</select>
+							<label>Correo</label>
+							<input class="form-control" type="email" id="email" name="email" placeholder="example@email.com">
+							<label>Mensaje</label>
+							<textarea class="form-control" id="message" name="message" placeholder="Escríbenos un mensaje..."></textarea>
+							<br>
+							<center><input id="btn" class="btn btn-warning btn-lg" type="submit" value="ENVIAR"></center>
+						</form>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -241,7 +265,7 @@
 		</div>
 	</div>
 	
-
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

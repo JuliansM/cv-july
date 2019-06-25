@@ -4,54 +4,34 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
-.nav{
-	background-color: #3F3C3B;
-	color: white;
-	padding-left: 10em;
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
-
-.nav h1 a{
-	color: white !important;
-	font-weight: bold;
-}
-
-.nav h1 a:hover{
-	text-decoration: none !important;
-}
-
-.nav-item{
-	background-color: #3F3C3B;
-	padding-left: 10em;
-	padding-top: 2em;
-}
-
-.nav-item ul li{
-	text-decoration: none;
-	display: inline-block;
-	margin-left: 1em;
-}
-
-.nav-item ul li a{
-	color: white;
-	font-size: 20px;
-	padding: 0.5em 0.5em;
-}
-
-.nav-item ul li a:hover{
-	background-color: white;
-	color: black;
-	padding: 0.5em 0.5em;
-	text-decoration: none !important;
-}
-
 .header{
 	background-color: #FC946E;
 	background-image: url("../images/fondo.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
-	padding-bottom: 13em;
+	padding: 0;
+	background-size: cover;
+  	min-height: 100vh;
+}
+
+.header .navbar{
+	margin: 0;
+	position: fixed !important;
+	top: 0 !important;
+	width: 100% !important;
+}
+
+.navbar{
+	background-color: rgba(0,0,0,0.5) !important;
+}
+
+.navbar a{
+	color: white !important;
+	font-weight: bold;
+}
+
+.nav-item a{
+	color: white !important;
+	font-weight: bold;
 }
 
 .father{
@@ -136,6 +116,14 @@ body{
 
 .sonService3{
 	background-image: url("../images/seo.png");
+}
+
+.form-contact{
+	padding-bottom: 2em;
+}
+
+#btn{
+	width: 200px;
 }
 
 .footer{
