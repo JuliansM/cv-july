@@ -6,6 +6,14 @@
 	padding-bottom: 1em;
 }
 
+.nav h1 a{
+	color: white !important;
+}
+
+.nav h1 a:hover{
+	text-decoration: none !important;
+}
+
 .nav-item{
 	background-color: #3F3C3B;
 	padding-left: 15em;
@@ -21,6 +29,13 @@
 .nav-item ul li a{
 	color: white;
 	font-size: 20px;
+}
+
+.nav-item ul li a:hover{
+	background-color: white;
+	color: black;
+	padding: 0.5em 0.5em;
+	text-decoration: none !important;
 }
 
 .header{
