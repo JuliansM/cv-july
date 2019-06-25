@@ -29,6 +29,7 @@
 .nav-item ul li a{
 	color: white;
 	font-size: 20px;
+	padding: 0.5em 0.5em;
 }
 
 .nav-item ul li a:hover{
@@ -76,4 +77,23 @@
 .text{
 	color: white;
 	text-align: center;
+}
+
+.about{
+	background-image: url("../images/about.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-top: 6em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.about h2{
+	margin-bottom: 2em;
+}
+
+.about hr{
+	border-top: 2px solid orange;
+	margin-bottom: 2em;
+	width: 50px;
 }
