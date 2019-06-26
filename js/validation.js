@@ -1,26 +1,19 @@
-$(document).on("ready",function(){
+$(document).ready(function(){
 
-	checkForm("#form-contact");
+	var emailExpr = new RegExp("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$");
+	
+	$("#btn").click(function(){
+		var name = $("#name").val().trim();
+		var service = $("#service").val().trim();
+		var email = $("#email").val().trim();
+		var message = $("#message").val().trim();
 
-	var namePattern = "^[a-z A-Z]{4,30}$";
-	var emailPattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$";
-	 
-	function checkInput(idInput, pattern) {
-		return $(idInput).val().match(pattern) ? true : false;
-	}
+		if (name === '' || service === '' || email === '' || !emailExpr.test(email) || message === '') {
+			alert("Error. Los campos con (*) son requeridos.");
+		}else{
+			alert("¡Mensaje enviado!");
+		}
 
-	function checkTextarea(idText) {
-		return $(idText).val().length > 12 ? true : false;
-	}
+	});
 
-	function checkForm (idForm) {
-		$(idForm + " *").on("change keydown", function() {
-		
-			if (checkInput("#name", namePattern) && checkInput("#email", emailPattern) && checkSelect("#service") && checkTextarea("#message") ){
-				alert("¡Datos Correctos!");
-			}else{
-				alert("¡Datos Incorrectos!");
-			}
-		});
-	}
 });
