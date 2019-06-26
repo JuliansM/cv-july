@@ -29,6 +29,11 @@ body{
 	font-weight: bold;
 }
 
+#navbarNav ul li a:hover{
+	color: #FC946E !important;
+	font-weight: bold;
+}
+
 .nav-item a{
 	color: white !important;
 	font-weight: bold;
@@ -59,7 +64,7 @@ body{
 	text-align: center;
 }
 
-.about, .portfolio{
+.about{
 	background-image: url("../images/about.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
