@@ -1,34 +1,42 @@
-.nav{
-	background-color: #3F3C3B;
-	color: white;
-	padding-left: 10em;
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-.nav-item{
-	background-color: #3F3C3B;
-	padding-left: 15em;
-	padding-top: 2em;
-}
-
-.nav-item ul li{
-	text-decoration: none;
-	display: inline-block;
-	margin-left: 1em;
-}
-
-.nav-item ul li a{
-	color: white;
-	font-size: 20px;
+body{
+	font-family: 'Lato', sans-serif;
 }
 
 .header{
 	background-color: #FC946E;
 	background-image: url("../images/fondo.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
-	padding-bottom: 13em;
+	padding: 0;
+	background-size: cover;
+  	min-height: 100vh;
+}
+
+.header .navbar{
+	margin: 0;
+	position: fixed !important;
+	top: 0 !important;
+	width: 100% !important;
+}
+
+.navbar{
+	background-color: rgba(0,0,0,0.5) !important;
+}
+
+.navbar a{
+	color: white !important;
+	font-weight: bold;
+}
+
+#navbarNav ul li a:hover{
+	color: #FC946E !important;
+	font-weight: bold;
+}
+
+.nav-item a{
+	color: white !important;
+	font-weight: bold;
 }
 
 .father{
@@ -51,14 +59,102 @@
     width: 200px;
 }
 
-.photo{
-	background-color: white;
-	padding-top: 2em;
-	padding-left: 2em;
-	padding-right: 2em;
-}
-
 .text{
 	color: white;
 	text-align: center;
+}
+
+.about{
+	background-image: url("../images/about.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.about, .services, .portfolio, .contact{
+	padding-top: 6em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 2em;
+	text-align : justify;
+}
+
+.about h2, .services h2, .portfolio h2, .contact h2{
+	margin-bottom: 2em;
+	font-weight: bold;
+}
+
+.about hr, .services hr{
+	border-top: 2px solid orange;
+	margin-bottom: 2em;
+	width: 50px;
+}
+
+.services, .contact{
+	background-color: #333232;
+	color: white;
+}
+
+.fatherService1, .fatherService2, .fatherService3{
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.sonService1, .sonService2, .sonService3{
+    background-repeat: repeat;
+    background-position: center;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: white;
+    background-size: 75% auto;
+    height: 200px;
+    width: 200px;
+}
+
+.sonService1{
+	background-image: url("../images/responsive.jpg");
+}
+
+.sonService2{
+	background-image: url("../images/tecnologyagil.jpg");
+}
+
+.sonService3{
+	background-image: url("../images/seo.png");
+}
+
+.portfolio{
+	background-color: #FC946E;
+	text-align: center;
+}
+
+.portfolio-images ul li{
+	display: inline-block;
+	margin: 1em 1em;
+	text-decoration: none !important;
+}
+
+.portfolio ul li img{
+	opacity: 0.2;
+  	filter: alpha(opacity=50); /* IE8*/
+}
+
+.portfolio ul li img:hover{
+	opacity: 1;
+  	filter: alpha(opacity=50); /* IE8*/
+}
+
+.form-contact{
+	padding-bottom: 2em;
+}
+
+#btn{
+	width: 200px;
+}
+
+.footer{
+	background-color: black;
+	color: white;
+	padding-top: 1em;
 }
