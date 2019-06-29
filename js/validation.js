@@ -25,7 +25,7 @@ $(document).ready(function(){
 	      destino = $('html');
 	    }
 	    $('html, body').animate({ scrollTop: destino.offset().top }, 500);
-	    return true;
+	    return false;
 	});
 
 });
