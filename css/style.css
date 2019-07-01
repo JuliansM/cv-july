@@ -149,6 +149,10 @@ body{
 	padding-bottom: 2em;
 }
 
+.form-contact p{
+	color: red;
+}
+
 #btn{
 	width: 200px;
 }
