@@ -70,6 +70,10 @@ body{
 	background-size: 100%;
 }
 
+.subtitle-about{
+	text-align: center;
+}
+
 .about, .services, .portfolio, .contact{
 	padding-top: 6em;
 	padding-left: 2em;
@@ -79,8 +83,9 @@ body{
 }
 
 .about h2, .services h2, .portfolio h2, .contact h2{
-	margin-bottom: 2em;
 	font-weight: bold;
+	margin-bottom: 2em;
+	text-align: center;
 }
 
 .about hr, .services hr{
@@ -92,6 +97,10 @@ body{
 .services, .contact{
 	background-color: #333232;
 	color: white;
+}
+
+.subtitle-services{
+	text-align: center;
 }
 
 .fatherService1, .fatherService2, .fatherService3{
@@ -126,12 +135,14 @@ body{
 
 .portfolio{
 	background-color: #FC946E;
+}
+
+.portfolio ul{
 	text-align: center;
 }
 
 .portfolio-images ul li{
-	display: inline-block;
-	margin: 1em 1em;
+	display: inline-flex;
 	text-decoration: none !important;
 }
 
